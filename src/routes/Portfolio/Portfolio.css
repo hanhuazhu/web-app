@@ -1,0 +1,10 @@
+.Portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  width: 100%;
+  animation: fadeInTransition ease 3s;
+  animation-fill-mode: forwards;
+  padding: 2rem;
+}

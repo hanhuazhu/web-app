@@ -1,0 +1,61 @@
+.Nav {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    position: sticky;
+    top: 0;
+    background-color: var(--secondary-color);
+    height: 10vh;
+    z-index: 1;
+  
+  }
+  
+  .Nav__toolbar {
+    display: inline-flex;
+    justify-self: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30vw;
+    list-style: none;
+    height: 100%;
+    margin: auto;
+    grid-column-start: 2;
+  }
+  
+  .Nav__toolbar > li > a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5em;
+    transition-duration: 5s border-bottom;
+    position: relative;
+  }
+  
+  /* Underline Animation */
+  
+  .Nav__toolbar > li > a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    transform-origin: bottom left;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .Nav__toolbar > li > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .Nav__Button {
+    background-color: transparent;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+    border: 0;
+  }

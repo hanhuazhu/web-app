@@ -1,0 +1,54 @@
+.Home {
+  height: 100%;
+  width: 100%;
+  animation: fadeInTransition ease 3s;
+  animation-fill-mode: forwards;
+}
+
+.Home__header, .Home__about {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Home__header {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Home__header > h1 {
+  font-size: 3.8rem;
+}
+
+.Home__header > h3 {
+  font-size: 1.8rem;
+  margin-top: -2rem;
+  font-weight: normal;
+  color: var(--secondary-color)
+}
+
+.Home__about {
+  flex-direction: row;
+}
+
+.Home__description {
+  width: 40vw;
+  margin-top: 1rem;
+  text-indent: 4rem;
+}
+
+.Home__description > span {
+  color: var(--secondary-color);
+}
+
+.Home__picture {
+  margin-left: 0%;
+  border-radius: 50%;
+  width: 50vh;
+  height: 50vh;
+  border: 0.5rem var(--primary-color) solid;
+  object-fit: cover;
+}
